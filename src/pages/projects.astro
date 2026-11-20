@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+
+<BaseLayout title="Projects" description="Things I've built, from small experiments to bigger ideas.">
+  <p class="font-mono text-xs uppercase tracking-widest text-accent">Projects</p>
+  <h1 class="mt-2 font-display text-4xl font-bold tracking-tight">Things I've built </h1>
+  <p class="mt-3 max-w-lg text-muted">
+    Small experiments, learning projects, and things I made just to see how they work under the hood.
+  </p>
+
+  <div class="mt-10 grid gap-4 sm:grid-cols-2">
+    {projects.map((project) => <ProjectCard project={project} />)}
+
+    <a
+      href="https://github.com/AhmedKhairy22"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-line p-6 text-center transition hover:border-accent"
+    >
+  
+      <span class="mt-3 font-display text-lg font-semibold">More experiments on GitHub</span>
+      <span class="mt-1 text-sm text-muted group-hover:text-accent">github.com/AhmedKhairy22 ↗</span>
+    </a>
+  </div>
+</BaseLayout>

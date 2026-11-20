@@ -1,22 +1,10 @@
-## Development
+# Project notes for AI agents
 
-When starting the dev server, use background mode:
+Personal website built with Astro and Tailwind CSS v4.
 
-```
-astro dev --background
-```
-
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
-
-## Documentation
-
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+- Pages are in `src/pages/`, components in `src/components/`, the shared layout in `src/layouts/BaseLayout.astro`.
+- Site info, links, interests and tools live in `src/data/site.ts`. Projects live in `src/data/projects.ts`.
+- Blog posts are Markdown files in `src/content/blog/`, defined in `src/content.config.ts`.
+- Colors are theme variables in `src/styles/global.css` (bg-paper, text-ink, text-muted, border-line, text-accent, etc.). Use these instead of raw Tailwind colors so light and dark mode both work.
+- Dark mode is the default. Don't add emojis.
+- Run `npm run build` to check for errors.
