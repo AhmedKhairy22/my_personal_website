@@ -22,16 +22,12 @@ export const NAV_LINKS = [
 ];
 
 export const INTERESTS = [
-  'Software engineering',
-  'Open source',
   'Systems programming',
+  'Linux & open source',
   'Web development',
-  'Linux',
   'How things work under the hood',
-  'Philosophy',
-  'History',
+  'Philosophy & history',
   'Chess',
-  'Reading',
 ];
 
 export const TOOLS = [
